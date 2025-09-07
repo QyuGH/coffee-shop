@@ -1,0 +1,23 @@
+.hidden {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: opacity 1s ease, transform 1s ease;
+}
+
+.show {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+
+
+@media (max-width: 760px){
+    /* Slide in from left */
+    .hidden.left {
+    transform: translateX(-30px);
+    }
+    .show.left {
+    transform: translateX(0);
+    opacity: 1;
+    }
+}

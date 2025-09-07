@@ -1,0 +1,73 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+:root {
+  font-size: 16px;
+  --logo-font: "DM Serif Display", serif;
+  --main-font: "Poppins", sans-serif;
+  --logo-color: #341100;
+  --lightTxtClr: #908e9b;
+  --lightTxtClr2: #fffff0;
+  --main-color: #713105;
+  --card-bg: #fff7e8;
+  --section-bg: #cfab71;
+  --size-xxs: 0.25rem;
+  --size-xs: 0.5rem;
+  --size-s: 0.75rem;
+  --size-m: 1rem;
+  --size-l: 1.25rem;
+  --size-xl: 1.5rem;
+  --size-xxl: 1.75rem;
+  --size-xxl1: 2rem;
+  --size-xxl2: 2.25rem;
+  --size-xxl3: 2.5rem;
+}
+
+.sidebar {
+    height: 100vh;
+    width: 50%;
+    background-color: var(--main-color);
+    position: fixed;
+    right: -100%;
+    z-index: 100;
+    transition:0.5s ease-in-out;
+}
+
+.mobile-nav {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.mobile-nav > a {
+    text-align: center;
+    width: 100%;
+    padding: .5rem;
+    transition: all 0.3s ease-in-out;
+}
+
+.mobile-nav > a:hover {
+    background-color: var(--logo-color);
+    color: var(--lightTxtClr2);
+}
+
+.nav-hr {
+    width: 50%;
+    border: 1px solid var(--lightTxtClr2);
+}
+
+#hide-x {
+    display: none;
+    font-size: 2rem;
+}
+
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 100vw;
+  background-color: rgba(0, 0, 0, 0.3); 
+  z-index: 99;
+  display: none; 
+}
+

@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Caffeine Coffee</title>
+    <link rel="stylesheet" href="styles/header.css"/>
+    <link rel="stylesheet" href="styles/hero.css">
+    <link rel="stylesheet" href="styles/menu.css">
+    <link rel="stylesheet" href="styles/about.css">
+    <link rel="stylesheet" href="styles/review.css ">
+    <link rel="stylesheet" href="styles/discount.css">
+    <link rel="stylesheet" href="styles/footer.css">
+    <link rel="stylesheet" href="styles/sidebar.css">
+    <link rel="stylesheet" href="styles/scroll.css">
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    />
+  </head>
+  <body>
+
+    <div id="overlay" class="overlay"></div>
+
+    <!-- Header section -->
+    <header class="header">
+      <div class="header-container">
+        <h1 class="logo">Caffeine.</h1>
+        <nav class="center-nav">
+          <a href="#home">Home</a>
+          <a href="#menu">Menu</a>
+          <a href="#about">About Us</a>
+          <a href="#reviews">Reviews</a>
+          <a href="#footer">Contacts</a>
+        </nav>
+        <nav class="right-nav">
+          <a href="#">Sign in</a>
+        </nav>
+        <a id="bars">
+          <i class="fa-solid fa-bars" id="burger"></i>
+          <i class="fa-solid fa-xmark" id="hide-x"></i>
+        </a>
+      </div>
+    </header>
+
+    <!-- Mobile nav -->
+    <div class="sidebar" id="sidebar">
+      <nav class="mobile-nav">
+        <a href="#home">Home</a>
+        <a href="#menu">Menu</a>
+        <a href="#about">About Us</a>
+        <a href="#reviews">Reviews</a>
+        <a href="#footer">Contacts</a>
+        <hr class="nav-hr">
+        <a href="#">Sign in</a>
+      </nav>
+    </div>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+      <div class="hero-content">
+        <h1 class="headline">Serving the best coffee in Iloilo!</h1>
+        <p class="text">
+          Start your day right with a cup of our handcrafted coffee, 
+          made from the finest beans roasted with care. 
+        </p>
+        <button class="hero-btn">Learn More</button>
+      </div>
+    </section>
+
+    <!-- Menu Section -->
+    <section class="menu" id="menu">
+      <h1 class="menu-label hidden">Choices from our menu</h1>
+
+      <div class="category-btn hidden">
+        <a class="cat-link" id="hot-link" data-target="hot-coffee">Hot Coffee</a>
+        <a class="cat-link" id="iced-link" data-target="iced-coffee">Iced Coffee</a>
+        <a class="cat-link" id="non-link" data-target="non-coffee">Non Coffee</a>
+        <a class="cat-link" id="dessert-link" data-target="dessert-container">Dessert</a>
+      </div>
+
+      <!-- Coffee Card Sections -->
+
+      <!-- Hot Coffee Section-->
+      <div class="category-container hidden" id="hot-coffee">
+        <h1 class="category-heading">Best Selling Hot Coffee</h1>
+        <div class="card-container" id="hot-coffee-card"></div>
+      </div>
+
+      <!-- Iced Coffee Section-->
+      <div class="category-container hidden" id="iced-coffee">
+        <h1 class="category-heading">Best Selling Iced Coffee</h1>
+        <div class="card-container" id="iced-coffee-card"></div>
+      </div>
+
+      <!-- Non Coffee Section-->
+      <div class="category-container hidden" id="non-coffee">
+        <h1 class="category-heading">Best Selling Non Coffee</h1>
+        <div class="card-container" id="non-coffee-card"></div>
+      </div>
+
+      <!-- Dessert Section--> 
+      <div class="category-container hidden" id="dessert-container">
+        <h1 class="category-heading">Best Selling Dessert</h1>
+        <div class="card-container" id="dessert"></div>
+      </div>
+    </section>
+
+    <!-- About Section-->
+     <section class="about-section" id="about">
+      <div class="content-container">
+
+        <div class="text-container hidden">
+          <h1 class="about-headline">Brewing comfort, one cup at a time.</h1>
+          <p class="about-text">
+            Caffeine Coffee is a cozy spot in Iloilo serving freshly brewed coffee, 
+            handcrafted drinks, and delightful treats. Founded in 2025, we’re dedicated to quality,
+            community, and creating a warm space where everyone feels at home.
+          </p>
+          <button class="explore-btn">Explore our products</button>
+        </div>
+
+      </div>
+     </section>
+
+     <!-- Reviews Section -->
+     <section class="reviews" id="reviews">
+      <h1 class="review-headline hidden">Our Satisfied Customer Reviews</h1>
+
+      <div class="review-container">
+
+        <div class="review-card hidden left">
+          <div class="profile-container">
+
+            <div class="review-info">
+              <div class="pfp-container">
+                <img src="assets/pfp-robin.jpg" alt="Profile picture">
+              </div>
+              <div class="name-container">
+                <h1 class="customer-name">Nico Robin</h1>
+                <hr class="name-hr">
+                <p class="occupation">Pirate</p>
+              </div>
+            </div>
+
+            <div class="stars">
+              <div class="rating">
+                <i class="fas fa-star"></i>   
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star-half-alt"></i> 
+              </div>
+              <span class="num-rate">4.5/5</span>
+            </div>
+          </div>
+
+          <p class="review-text">
+            <span class="quote">“</span> Absolutely love this place! The cappuccino is always smooth and rich, and the baristas are super friendly. 
+            It's my go-to spot to unwind or get some work done. Highly recommend the caramel latte too! <span class="quote">”</span>
+          </p>
+        </div>
+
+        <div class="review-card hidden left">
+          <div class="profile-container">
+
+            <div class="review-info">
+              <div class="pfp-container">
+                <img src="assets/piastri.jpg" alt="Profile picture">
+              </div>
+              <div class="name-container">
+                <h1 class="customer-name">Oscar Piastri</h1>
+                <hr class="name-hr">
+                <p class="occupation">F1 Driver</p>
+              </div>
+            </div>
+
+            <div class="stars">
+              <div class="rating">
+                <i class="fas fa-star"></i>   
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+              </div>
+              <span class="num-rate">5/5</span>
+            </div>
+          </div>
+
+          <p class="review-text">
+            <span class="quote">“</span> Best coffee I’ve had in a while! The caramel latte was smooth and perfectly sweet. 
+            The place has such a relaxing vibe too. <span class="quote">”</span>
+          </p>
+        </div>
+
+        <div class="review-card hidden left">
+          <div class="profile-container">
+
+            <div class="review-info">
+              <div class="pfp-container">
+                <img src="assets/an.jpg" alt="Profile picture">
+              </div>
+              <div class="name-container">
+                <h1 class="customer-name">Anonymous</h1>
+                <hr class="name-hr">
+                <p class="occupation">Student</p>
+              </div>
+            </div>
+
+            <div class="stars">
+              <div class="rating">
+                <i class="fas fa-star"></i>   
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star-half-alt"></i> 
+                <i class="far fa-star"></i>
+              </div>
+              <span class="num-rate">3.5/5</span>
+            </div>
+          </div>
+
+          <p class="review-text">
+            <span class="quote">“</span> Cozy atmosphere and great coffee! I tried the hazelnut cold brew and it was fantastic. 
+            Only reason I’m giving 3.5 stars is because seating can be limited during peak hours. Otherwise, a hidden gem! <span class="quote">”</span>
+          </p>
+        </div>
+
+     </section>
+
+     <!-- Discount Section -->
+     <section class="discount">
+      <h1 class="discount-headline">Join in and get 15% Off!</h1>
+      <p class="discount-text">Subscribe and get a 15% discount code</p>
+      <button class="subscribe-btn">Subscribe</button>
+     </section>
+
+     <!-- Footer -->
+     <footer class="footer" id="footer">
+      
+      <div class="footer-container">
+        <div class="information">
+          <h1 class="info-title">Privacy</h1>
+          <p class="info-text">Terms of use</p>
+          <p class="info-text">Privacy policy</p>
+          <p class="info-text">Cookies</p>
+        </div>
+
+        <div class="information">
+          <h1 class="info-title">Services</h1>
+          <p class="info-text">Shop</p>
+          <p class="info-text">Order ahead</p>
+          <p class="info-text">Menu</p>
+        </div>
+
+        <div class="information">
+          <h1 class="info-title">About us</h1>
+          <p class="info-text">Find a location</p>
+          <p class="info-text">About us</p>
+          <p class="info-text">Our story</p>
+        </div>
+
+        <div class="information">
+          <h1 class="info-title">Information</h1>
+          <p class="info-text">Plans and pricing</p>
+          <p class="info-text">Sell your products</p>
+          <p class="info-text">Jobs</p>
+        </div>
+
+        <div class="information">
+          <h1 class="info-title">Social Media</h1>
+          <div class="socmed-icons">
+            <i class="fa-brands fa-square-facebook"></i>
+            <i class="fa-brands fa-instagram"></i>
+            <i class="fa-brands fa-square-x-twitter"></i>
+            <i class="fa-brands fa-youtube"></i>
+          </div>
+        </div>
+      </div>
+
+      <hr>
+
+      <p class="copyright">&copy; 2025 Caffeine Coffee. All rights reserved.</p>
+
+     </footer>
+
+    <script src="products.js"></script>
+    <script src="menu.js"></script>
+    <script src="sidebar.js"></script>
+    <script src="slide.js"></script>
+  </body>
+</html>

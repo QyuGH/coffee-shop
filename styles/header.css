@@ -1,0 +1,117 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+:root {
+  font-size: 16px;
+  --logo-font: "DM Serif Display", serif;
+  --main-font: "Poppins", sans-serif;
+  --logo-color: #341100;
+  --lightTxtClr: #908e9b;
+  --lightTxtClr2: #fffff0;
+  --main-color: #713105;
+  --card-bg: #fff7e8;
+  --section-bg: #cfab71;
+  --size-xxs: 0.25rem;
+  --size-xs: 0.5rem;
+  --size-s: 0.75rem;
+  --size-m: 1rem;
+  --size-l: 1.25rem;
+  --size-xl: 1.5rem;
+  --size-xxl: 1.75rem;
+  --size-xxl1: 2rem;
+  --size-xxl2: 2.25rem;
+  --size-xxl3: 2.5rem;
+}
+
+* {
+  font-family: "Poppins", sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #FFFFF0;
+  overflow-x: hidden;
+}
+
+img,
+video {
+  max-width: 100%;
+  height: auto;
+}
+
+ul, ol {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.header {
+  position: sticky;
+  top: 0;
+  padding: 1rem;
+  background-color: var(--main-color);
+  color: var(--lightTxtClr2);
+  z-index: 100;
+}
+
+.header-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header-container > * {
+  font-size: var(--size-m);
+}
+
+.logo {
+  font-family: var(--logo-font);
+  font-size: var(--size-xxl);
+  font-style: italic;
+  transition: all 0.3s ease-in-out;
+}
+
+#bars {
+  display: none;
+}
+
+.logo:hover {
+  cursor: pointer;
+  color: var(--logo-color);
+}
+
+.center-nav {
+  display: flex;
+  gap: 1rem;
+  transition: all 0.3s ease;
+}
+
+nav > a {
+  transition: all 0.3s ease-in-out;
+}
+
+nav > a:hover {
+  color: var(--logo-color);
+}
+
+@media (max-width: 760px){
+  .center-nav, .right-nav {
+      display: none;
+  }
+
+  #bars {
+    display: inline;
+    font-size: 1.5rem;
+  }
+
+}
